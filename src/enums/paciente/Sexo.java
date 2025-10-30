@@ -1,4 +1,4 @@
-package enums;
+package enums.paciente;
 
 public enum Sexo {
     M,

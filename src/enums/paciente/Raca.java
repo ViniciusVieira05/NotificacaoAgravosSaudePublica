@@ -1,4 +1,4 @@
-package enums;
+package enums.paciente;
 
 public enum Raca {
     Branca,

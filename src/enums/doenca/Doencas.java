@@ -1,7 +1,7 @@
-package enums;
+package enums.doenca;
 
 public enum Doencas {
-    Malaria,
+    Malária,
     Hanseníase,
     Tuberculose
 }
