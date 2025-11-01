@@ -1,7 +1,7 @@
 package enums.paciente;
 
-public enum Nativo {
-    sim,
+public enum Autocdone {
+    Sim,
     Nao,
     Indeteerminado
 }

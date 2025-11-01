@@ -1,4 +1,4 @@
-package enums;
+package enums.outros;
 
 public enum MododeEntrada {
     Caso_Novo,

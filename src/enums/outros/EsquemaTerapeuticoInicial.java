@@ -1,4 +1,4 @@
-package enums;
+package enums.outros;
 
 public enum EsquemaTerapeuticoInicial {
     PQT_PB_6_Doses,
