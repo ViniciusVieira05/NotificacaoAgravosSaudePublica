@@ -23,6 +23,16 @@ public abstract class Notificacao {
     protected DadosTratamento dadosTratamento;
     protected entidades.dados.Coclusão conclusaoEncerramento; // usando a classe existente (com acento)
 
+
+    public Notificacao() {
+        this.dadosGerais = new DadosGerais();
+        this.dadosIndividuais = new DadosIndividuais();
+        this.dadosResidenciais = new DadosResidencias();
+        this.dadosEpidemiologicos = new DadosEpidemiologicos();
+        this.dadosTratamento = new DadosTratamento();
+        this.conclusaoEncerramento = new Coclusão();
+    }
+
     public abstract void registrarNotificacao(Scanner sc);
 
 
@@ -395,5 +405,3 @@ public abstract class Notificacao {
         this.conclusaoEncerramento = conclusaoEncerramento;
     }
 }
-
-

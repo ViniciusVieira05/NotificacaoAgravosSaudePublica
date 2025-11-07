@@ -9,6 +9,7 @@ import enums.paciente.Escolaridade;
 import enums.paciente.Raca;
 import enums.paciente.Sexo;
 import enums.paciente.Zona;
+import util.GerenciadorDeArquivos;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -23,8 +24,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Scanner sc = new Scanner(System.in);
+        // carrega notificações salvas
+        GerenciadorDeArquivos.carregarNotificacoes();
         int opcao = -1;
         while (opcao != 0) {
             System.out.println("\n=== SISTEMA DE NOTIFICAÇÕES DE AGRAVOS ===");
@@ -115,6 +117,8 @@ public class Main {
         try {
             Notificacao.registrar(n);
             System.out.println("Notificação registrada com sucesso. Código: " + n.getCodigo());
+            // salva no arquivo
+            GerenciadorDeArquivos.salvarNotificacao(n);
         } catch (IllegalArgumentException iae) {
             System.out.println("Erro ao registrar notificação: " + iae.getMessage());
         } catch (Exception e) {

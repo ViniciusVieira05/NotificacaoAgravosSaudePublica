@@ -13,6 +13,10 @@ public class DadosGerais {
     private String ubs;
     private LocalDate dataDiagnostico;
 
+    public DadosGerais(){
+
+    }
+
     public DadosGerais(Doencas doenca, LocalDate dataNotificacao, String uf, String municipioDeNotificacao, String ubs, LocalDate dataDiagnostico){
         this.doenca = doenca;
         this.dataNotificacao = dataNotificacao;
@@ -21,6 +25,7 @@ public class DadosGerais {
         this.ubs = ubs;
         this.dataDiagnostico = dataDiagnostico;
     }
+
 
     public Doencas getDoenca() {
         return doenca;
